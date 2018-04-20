@@ -1,26 +1,19 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyWebsite.MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="MyWebsite.MasterPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+   
+       <link rel="stylesheet" href="~/CSS/StyleSheet.css" type="text/css" />
 </head>
-<body>
-    <form id="form1" runat="server">
 
-       <head runat="server">
-    <link rel="stylesheet" href="Styles/StyleSheet1.css" type="text/css" />
-    <title>My Website</title>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-    </asp:ContentPlaceHolder>
-    </head>
-<body>
+   
+<body runat="server">
     <form id="form2" runat="server">
 
-        <div id="banner">
+        <div id="banner" runat="server">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/MyBanner.png" Width="100%" />
         </div>
         <div id="navigation">
@@ -34,24 +27,14 @@
             </asp:Menu>
         </div>
         <div id="content">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
             </asp:ContentPlaceHolder>
         </div>
 
-    <div>
-        
-    </div>
+    
     </form>
 </body>
 
 
-
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
-</body>
 </html>

@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="MBASystemModel.Module" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
         <EntityTypeShape EntityType="MBASystemModel.School" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="MBASystemModel.Student" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="MBASystemModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MBASystemModel.sysdiagram" Width="1.5" PointX="5.125" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="MBASystemModel.fk_AlumniSchool" ManuallyRouted="false" />
         <AssociationConnector Association="MBASystemModel.fk_CourseSchool" ManuallyRouted="false" />
         <AssociationConnector Association="MBASystemModel.fk_CurriculumCourse" ManuallyRouted="false" />

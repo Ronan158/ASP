@@ -17,16 +17,41 @@ namespace MyWebsite.Pages
         {
 
         }
-
+        private void CreateALog(int UserID, String category, string description)
+        {
+         /*
+            Logs logs = new Logs();
+            logs.userID = userID;
+            logs.category = category;
+            logs.description = description;
+            db.logs.Add(logs);
+            int success = db.SaveChanges();
+            if (success == 0)
+            {
+                lblSuccess.Text = "Error creating logs.";
+            }
+        */
+        }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             bool authenticated = false;
             var username = TbxUser.Text.Trim();
             var password = TbxPass.Text.Trim();
-         //   foreach (var user in db..Where(t => t.username == username && t.password == password))
-         //   {
+            /*foreach (var record in db.User.where(TbxPass => TbxUser == username && t.password == password))
+              {
+                  Response.Redirect("../pages/Home.aspx")
+              }
+              if(authenticated)
+              {
+                  
+              }
+              else
+              {
+                    lblSuccess.Text = "Problem loggin in. Please re-enter details.";
+              }
+              lblMessage.Text = "User details entered are " + username + " " + password;
 
-         //   }
+      */
         }
     }
 }

@@ -104,6 +104,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\signin.css" />
     <Content Include="CSS\StyleSheet.css" />
     <Content Include="Images\MyBanner.png" />
     <Content Include="MyDataModel.Context.tt">
