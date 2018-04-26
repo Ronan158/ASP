@@ -25,7 +25,7 @@ namespace MyWebsite
         public string Type { get; set; }
         public string Topics { get; set; }
         public string Lecturer { get; set; }
-        public int School_ID { get; set; }
+        public Nullable<int> School_ID { get; set; }
     
         public virtual School School { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

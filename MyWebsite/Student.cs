@@ -20,7 +20,7 @@ namespace MyWebsite
         public float GPA { get; set; }
         public string CompletedCourses { get; set; }
         public string EnrollDate { get; set; }
-        public int School_ID { get; set; }
+        public Nullable<int> School_ID { get; set; }
     
         public virtual School School { get; set; }
     }

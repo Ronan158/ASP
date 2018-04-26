@@ -11,6 +11,8 @@ namespace MyWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          //  Menu1.Visible = false;
+            
 
         }
     }

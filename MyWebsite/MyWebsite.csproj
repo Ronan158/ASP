@@ -107,6 +107,7 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\signin.css" />
     <Content Include="CSS\StyleSheet.css" />
+    <Content Include="Images\MBA1.jpg" />
     <Content Include="Images\MyBanner.png" />
     <Content Include="MyDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -214,7 +215,7 @@
     <Compile Include="Student.cs">
       <DependentUpon>MyDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
+    <Compile Include="User.cs">
       <DependentUpon>MyDataModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>

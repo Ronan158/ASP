@@ -15,12 +15,12 @@ namespace MyWebsite
     public partial class Alumnus
     {
         public int SSN { get; set; }
-        public string Nane { get; set; }
+        public string Name { get; set; }
         public string EmployerNameAddress { get; set; }
         public string CurrentPosition { get; set; }
         public string CurrentSalary { get; set; }
         public float GPA { get; set; }
-        public int School_ID { get; set; }
+        public Nullable<int> School_ID { get; set; }
     
         public virtual School School { get; set; }
     }

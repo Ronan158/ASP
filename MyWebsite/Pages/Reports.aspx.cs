@@ -11,7 +11,7 @@ namespace MyWebsite.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            MyIFrame.Attributes["src"] = "http://172.28.134.7/ReportServer/";
         }
     }
 }

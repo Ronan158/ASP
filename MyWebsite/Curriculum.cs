@@ -14,19 +14,11 @@ namespace MyWebsite
     
     public partial class Curriculum
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Curriculum()
-        {
-            this.Schools = new HashSet<School>();
-        }
-    
         public int Curriculum_Code { get; set; }
-        public string Names { get; set; }
+        public string Name { get; set; }
         public string List_OF_Courses { get; set; }
-        public int Course_Code { get; set; }
+        public Nullable<int> Course_Code { get; set; }
     
         public virtual Course Course { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<School> Schools { get; set; }
     }
 }

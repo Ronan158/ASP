@@ -13,10 +13,10 @@ namespace MyWebsite
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MBASystemEntities : DbContext
+    public partial class MBASystemNewEntities : DbContext
     {
-        public MBASystemEntities()
-            : base("name=MBASystemEntities")
+        public MBASystemNewEntities()
+            : base("name=MBASystemNewEntities")
         {
         }
     
@@ -31,6 +31,6 @@ namespace MyWebsite
         public virtual DbSet<Module> Modules { get; set; }
         public virtual DbSet<School> Schools { get; set; }
         public virtual DbSet<Student> Students { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

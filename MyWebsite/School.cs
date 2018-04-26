@@ -17,8 +17,8 @@ namespace MyWebsite
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public School()
         {
-            this.Alumni = new HashSet<Alumnus>();
             this.Courses = new HashSet<Course>();
+            this.Alumni = new HashSet<Alumnus>();
             this.Modules = new HashSet<Module>();
             this.Students = new HashSet<Student>();
         }
@@ -27,15 +27,14 @@ namespace MyWebsite
         public string Name { get; set; }
         public string Location { get; set; }
         public int NUM_MBA_GRADS { get; set; }
-        public float MBA_Budget { get; set; }
-        public byte[] ICCSB_status { get; set; }
-        public int Curriculum_Code { get; set; }
+        public int MBA_Budget { get; set; }
+        public string ICCSB_Status { get; set; }
+        public Nullable<int> Curriculum_Code { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Alumnus> Alumni { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Course> Courses { get; set; }
-        public virtual Curriculum Curriculum { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Alumnus> Alumni { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Module> Modules { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

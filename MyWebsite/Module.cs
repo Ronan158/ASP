@@ -18,7 +18,7 @@ namespace MyWebsite
         public string Name { get; set; }
         public string Lecturer { get; set; }
         public string Subject { get; set; }
-        public int School_ID { get; set; }
+        public Nullable<int> School_ID { get; set; }
     
         public virtual School School { get; set; }
     }
