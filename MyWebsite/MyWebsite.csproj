@@ -131,6 +131,7 @@
     <Content Include="MyDataModel.edmx.diagram">
       <DependentUpon>MyDataModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\MyWebSite.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
